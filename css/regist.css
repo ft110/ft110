@@ -1,0 +1,31 @@
+.box{
+    box-shadow:0 0 3px #000;
+    width: 1000px;
+    height: 500px;
+    /* background-color: rgb(114, 86, 86); */
+    margin-top: 100px;
+    margin-left:350px;
+}
+.biaodan{
+    /* background-color: rgb(216, 157, 157); */
+    width: 450px;
+    position: relative;
+    left: 300px;
+    top: 100px;
+}
+
+
+.footer{
+    height: 50px;  
+    width: 100%;
+    background-color: rgb(61, 57, 57);
+    position: fixed;
+    bottom: 0;
+
+    } 
+    #dizhi{
+        color: hsl(180, 100%, 97%);
+        position:relative;
+        left: 85%;
+        /* top: -10px; */
+    }

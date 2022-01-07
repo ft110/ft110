@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <script src="jquery-3.5.1/jquery-3.5.1.js"></script>
+	<link rel="stylesheet" href="bootstrap-3.4.1-dist/css/bootstrap.css">
+	<script src="bootstrap-3.4.1-dist/js/bootstrap.js"></script>
+	<link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+
+
+</body>
+<script type="text/javascript">
+	var image = new Array();			//声明数组用来存储要轮播图片的地址
+	image[0] = "img/dangao1.jpg";			//为数组中每一个元素赋值图片的地址
+	image[1] = "img/dangao2.jpg";
+	image[2] = "img/dangao3.jpg";
+	image[3] = "img/dangao4.jpg";
+	var introduce = new Array();		//声明数组用来存储要文字内容
+	introduce[0] = "Master Liu LOVE YOU !";//为数组中每一个元素赋值的文字内容
+	introduce[1] = "Master Liu LOVE YOU Again !";
+	introduce[2] = "Master Liu LOVEs YOU Three Thousand Times !";
+	introduce[3] = "Master Liu COOL !";
+	document.getElementById("change").src = image[0];//初始化图片
+	document.getElementById("imgText").innerHTML = introduce[0];//初始化文字内容
+	var i = -1;							//用来迭代图片次序的变量
+	function changeImg() {				//定义更改img标签中src属性的函数		
+		i = (i + 1) % image.length;		//递增变量，用来指向下一张图片,并使变量不大于图片的数量
+		document.getElementById("change").src = image[i];//更改src属性
+		document.getElementById("imgText").innerHTML = introduce[i];//更改文字内容
+	}
+	var b = self.setInterval("changeImg()", 3000);//定时执行函数
+	function last() {
+		self.clearInterval(b);						//清除计时
+		i = (i + image.length - 1) % image.length;	//对变量进行递减操作
+		document.getElementById("change").src = image[i];//替换图片
+		document.getElementById("imgText").innerHTML = introduce[i];//替换文字内容
+		b = self.setInterval("changeImg()", 3000);//重新计时
+	}
+	function next() {
+		self.clearInterval(b);
+		i = (i + 1) % image.length;
+		document.getElementById("change").src = image[i];
+		document.getElementById("imgText").innerHTML = introduce[i];
+		b = self.setInterval("changeImg()", 3000);
+	}
+
+	/* window.onresize = function () {
+		var w=window.innerWidth
+	|| document.documentElement.clientWidth
+	|| document.body.clientWidth; */
+		/* w = window.screen.availWidth;
+
+		document.getElementsByTagName("body")[0].style.width = w + "px";
+	}  */
+
+
+</script>
+</html>

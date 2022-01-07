@@ -1,0 +1,132 @@
+html{
+    width: 100%;
+}
+body{
+    width: 100%;
+    background: url(../img/beijingf.gif);
+	background-color: #140f0f;
+}
+
+.navbar{
+    margin-bottom: 0%;
+}
+.navbar-default{
+    margin: bottom 0;
+    height: 15px;
+    background-color: rgb(27, 38, 48);
+	background: url(/img/beijingf.gif);
+    color: #df9b64;
+    padding: 0%;
+    border: 0;
+}
+.tbj{
+	background: url(/img/beijingf.gif);
+}
+
+
+.center{
+    background-color: bisque;
+	background: url(/img/beijingf.gif);
+}
+
+/* CSS Document */
+.box{
+	z-index: 1;
+	position: relative;
+	/* margin: 50px 240px 45px 240px; */
+ 	width: 720px;
+	height: 405px; 
+}
+.box .left,.right{
+	z-index: 5;
+	display: block;
+	position: absolute;
+	top: 40%;
+	width: 50px;
+	height: 80px;
+	font-size: 60px;
+	line-height: 70px;
+	text-decoration: none;
+	text-align: center;
+	color: rgba(255,255,255,1.00);
+	background:rgba(0,155,255,0.50);
+}
+.box .left{
+	float: left;
+	left: 20px;
+}
+.box .right{
+	float: right;
+	right: 20px;
+}
+.box img{
+	display: block;
+	width: 720px;
+	height: 405px;
+}
+.box .text{
+	background: rgba(0,0,0,0.52);
+	padding: 30px 10px 30px 10px;
+	z-index: 3;
+	text-align: left;
+	font-size: 20px;
+	line-height: 20px;
+	color: rgba(255,255,255,1.00);
+	width: 700px;
+	position: absolute;
+	bottom: 0px;
+	margin: 0;
+}
+
+
+ul li{
+    color: white;
+}
+ul li a{
+    color: white;
+}
+.lianxi{
+    margin-bottom: 30%;
+}
+.jumbotron{
+    color: rgba(22, 132, 228, 0.61);
+    margin: 0%;
+    height: 200px;
+}
+
+.foot .jumbotron{
+    padding: 0;
+    height: 70px;
+}
+ 
+.footer{
+    height: 50px;  
+    width: 100%;
+    background-color: rgb(61, 57, 57);
+ position: fixed;
+    bottom: 0;
+
+    } 
+#dizhi{
+    color: hsl(180, 100%, 97%);
+    position:relative;
+    left: 85%;
+    top: -10px;
+}
+.xuanyan{
+	margin: 30px;
+	color: aliceblue;
+	/* background-color:black; */
+	width: 500px;
+	height: 300px;
+}
+.zhanqian{
+	position: relative;
+	left: 1000px;
+	top: -300px;
+	width: 500px;
+	background-color:blue;
+}
+#myNavbar{
+	background-color:#660033;
+}

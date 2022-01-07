@@ -1,0 +1,74 @@
+ul{
+    list-style-type: none;
+
+}
+.shangqin > li{
+    width: 500px;
+    color: rgb(253, 243, 243);
+    margin-right: 40px;
+    margin-bottom: 20px;
+    padding-bottom: -10px;
+    float: left;
+    height: 400px;
+}
+a:hover
+{ 
+    color: red;
+}
+
+.abiao{
+    /* background-color:black; */
+}
+.miaosu{
+    /* background-color: blue; */
+    position: relative;
+    top: -20px;
+}
+.shen{
+    /* background-color: brown; */
+    width: 100px;
+    position: relative;
+    left: 120px;
+    top:-40px;
+}
+.gouwu{
+    position: relative;
+    top: -30px;
+    left: 280px;
+}
+.goumai{
+    position: relative;
+    top: -76px;
+    left: 390px;
+}
+.jiage{
+    position: relative;
+    top: -110px;
+}
+img{
+    border-radius: 3%;
+    width: 500px;
+    height: 300px;
+}
+body{
+    background: url(../img/beijingf.gif);
+}
+.navbar{
+    background: url(../img/beijingf.gif);
+    padding-bottom: 0%;
+    border: 0ch;
+}
+.zhuti{
+    margin-left: 5%;
+}
+.wei{
+    border-radius: 3%;
+    background:rgb(250,247,239); 
+    height: 400px;
+}
+.tou{
+}
+img:hover{
+    border-radius: 3%;
+    opacity:0.5;
+}
